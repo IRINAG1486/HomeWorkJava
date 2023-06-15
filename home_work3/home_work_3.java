@@ -20,6 +20,7 @@ public class home_work_3 {
         findMax(list);
         findMin(list);
         findAverage(list);
+        removeEvenNumbers(list);
         }
 
         public static void findMax(ArrayList <Integer> list) {
@@ -50,6 +51,13 @@ public class home_work_3 {
             double result = sum / list.size();
             System.out.println("Среднее значение элементов в списке - " + result);
         }
+
+        public static void removeEvenNumbers(ArrayList <Integer> list) {
+            list.removeIf(i -> i % 2 == 0);
+            System.out.println(list);
+            }
+            
+        
 
         
 }
